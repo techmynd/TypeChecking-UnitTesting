@@ -1,0 +1,22 @@
+https://www.npmjs.com/package/prop-types
+
+dependency
+==========
+"prop-types": "^15.7.2",
+
+in component
+============
+import PropTypes from 'prop-types';
+
+and use it like
+
+ComponentName.propTypes = {};
+
+or
+
+App.propTypes = {
+  counter: PropTypes.number,
+  classname: PropTypes.string,
+};
+
+given that you have props.classname and props.counter in your component

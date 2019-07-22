@@ -1,0 +1,47 @@
+dev dependency
+==============
+"flow-bin": "^0.103.0",
+
+Script
+======
+"flow": "flow"
+
+Command
+========
+> yarn run flow
+
+in App.js or main js file or the file you want to check declare at top
+
+// @flow
+
+and use like
+
+type Props = {
+  // props types
+
+  // in case you use props.title
+  title: string
+
+  isEnabled: boolean,
+  prevState: any,
+};
+
+class
+======
+class ExampleClass extends Component<Props, State> {}
+or
+class ExampleClass extends Component<Props> {}
+
+functional component
+====================
+const constName = (props: Props) => {}
+
+adding flow
+===========
+https://facebook.github.io/create-react-app/docs/adding-flow
+
+tutorial
+========
+https://www.youtube.com/watch?v=L0nJTyHBTtE
+
+> see react components repo for more
