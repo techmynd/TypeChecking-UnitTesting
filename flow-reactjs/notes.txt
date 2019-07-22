@@ -36,12 +36,41 @@ functional component
 ====================
 const constName = (props: Props) => {}
 
+
+
+
 Make a Property Optional
 ========================
 
 title?: string
 
 all types are required - to make them optional use ?
+
+
+
+
+defining default props
+======================
+
+You can define default props inside component
+
+
+type Props = {
+  title: string
+};
+
+class Test extends Component<Props> {
+  static defaultProps = {
+    title: 'my title'
+  }
+}
+
+it make make title an optional prop
+
+
+
+
+
 
 adding flow
 ===========
