@@ -36,6 +36,13 @@ functional component
 ====================
 const constName = (props: Props) => {}
 
+Make a Property Optional
+========================
+
+title?: string
+
+all types are required - to make them optional use ?
+
 adding flow
 ===========
 https://facebook.github.io/create-react-app/docs/adding-flow
@@ -45,3 +52,5 @@ tutorial
 https://www.youtube.com/watch?v=L0nJTyHBTtE
 
 > see react components repo for more
+
+
