@@ -1,0 +1,9 @@
+> 'type aliases' can only be used in a .ts file
+
+1. Go to extension
+2. Click on more (...) and select Show Built-in extension
+3. Search "TypeScript and JavaScript Language Features" - yellow & blue icon
+4. Click on Setting icon of extension and select Disable (workspace)
+5. Click on Reload / Restart Required
+
+https://stackoverflow.com/questions/48852007/type-aliases-can-only-be-used-in-a-ts-file/51034421
