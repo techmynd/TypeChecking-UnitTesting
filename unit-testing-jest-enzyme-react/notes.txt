@@ -1,0 +1,51 @@
+For react
+=========
+Create setupTests.js in src folder / it should have following code
+
+===========================
+import { configure } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
+configure({ adapter: new Adapter() });
+===========================
+
+yarn add -D enzyme enzyme-adapter-react-16 jest jest-enzyme react-test-renderer
+-- but you dont need jest - its included in create-react-app
+
+===========================
+"devDependencies": {
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "jest-enzyme": "^7.0.2",
+    "react-test-renderer": "^16.8.6",
+  }
+===========================
+
+create test files e.g.
+
+app.js
+app.test.js
+
+to text if component renders properly do this
+
+===========================
+import React from 'react';
+import { mount, shallow, render } from 'enzyme';
+import APP from './App';
+
+describe('App Component', () => {
+  it('Should render without errors', () => {
+    shallow(<APP />);
+  });
+});
+===========================
+
+hit 
+> yarn run test
+
+
+https://medium.com/codeclan/testing-react-with-jest-and-enzyme-20505fec4675
+
+https://medium.com/@rossbulat/testing-in-react-with-jest-and-enzyme-an-introduction-99ce047dfcf8
+
+https://www.youtube.com/watch?v=tYMLXpOJtng
+
